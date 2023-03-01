@@ -42,15 +42,15 @@ services:
       - "1443:8080"
 
 
-  daytrader-ping-service:
-    image: daytrader-ping-service:latest
-    hostname: daytrader-ping-service
-    container_name: daytrader-ping-service
-    ports:
-      - "6443:8080"
-    depends_on:
-      - daytrader-gateway-service
-      - daytrader-accounts-service
-      - daytrader-portfolios-service
-      - daytrader-quotes-service
-      - daytrader-web-service
+  # daytrader-ping-service:
+  #   image: daytrader-ping-service:latest
+  #   hostname: daytrader-ping-service
+  #   container_name: daytrader-ping-service
+  #   ports:
+  #     - "6443:8080"
+  #   depends_on:
+  #     - daytrader-gateway-service
+  #     - daytrader-accounts-service
+  #     - daytrader-portfolios-service
+  #     - daytrader-quotes-service
+  #     - daytrader-web-service
